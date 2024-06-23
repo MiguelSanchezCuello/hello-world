@@ -5,22 +5,36 @@ class UserGreeting extends Component {
      super(props)
    
      this.state = {
-        isLoggedIn: true
+        isLoggedIn: false
      }
    }
    
   
     render() {
-        if (this.state.isLoggedIn) {
-            return <div>Welcome Coto</div>
+        // if else approach
+        // if (this.state.isLoggedIn) {
+        //     return <div>Welcome Coto</div>
+        // } else {
+        //     return <div>Welcome Guest</div>
+        // }
+
+        // Element variable approach
+        let message
+        if (this.state.isLoggedIn){
+            message = <div>Welcome Coto</div>
         } else {
-            return <div>Welcome Guest</div>
+            message = <div>Welcome Guest</div>
         }
 
+        return <div>{message}</div>
+
+
+        // Approach with ternary operator.
 
 
 
 
+        
         // return (
         //     <div>
         //         <div>Welcome React</div>
