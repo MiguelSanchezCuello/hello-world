@@ -4,6 +4,12 @@ import Person from './Person'
 function NameList() {
     const names = ['Bruce', 'Clark', 'Diana','Bruce']
     const nameList = names.map((name, index) => <h2 key={index}>{name} and index: {index}</h2>)
+    // When rendering lists only use index as a key under the followign conditions:
+    // 1. The list and items are static and will not change.
+    // 2. The items in the list do not have a unique id.
+    // 3. The list will not be reordered or filtered.
+    // This is because there are some issues with the UI when rendering and even though the items 
+    // in the list might seem organized and changed the values willl not. check video 19 for details.
 
     const persons = [
         {
