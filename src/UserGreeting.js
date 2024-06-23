@@ -5,7 +5,7 @@ class UserGreeting extends Component {
      super(props)
    
      this.state = {
-        isLoggedIn: false
+        isLoggedIn: true
      }
    }
    
@@ -41,7 +41,7 @@ class UserGreeting extends Component {
         // Short-circuit operator appraoch. Used when you want to render something or nothing
         return this.state.isLoggedIn && <div>Welcome Coto</div>
         
-
+        // For most of the cases they suggest to use ternary or short=circuit.
 
 
         // return (
