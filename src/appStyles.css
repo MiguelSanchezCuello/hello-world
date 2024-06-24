@@ -1,3 +1,8 @@
 .error {
     color: red;
 }
+
+/* The advantage of having an appStyles.css is that all the children componets of the App.js will
+inherit these styles. Which does not happen when we use module to style, look at the example we added the 
+heading to the Inline.js file and it brings up the style with it, but if we try with the module css then
+the react application will not compile. */
