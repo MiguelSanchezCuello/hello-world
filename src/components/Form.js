@@ -40,24 +40,25 @@ class Form extends Component {
     }
     
   render() {
+    const {username, comments, topic} = this.state; // destructuring so we can use just the property name in the sate object insatead of using this.state.property
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
             <label>Username:</label>
             <input type="text" name="username" 
-                value={this.state.username} 
+                value={username} 
                 onChange={this.handleUsernameChange}/>
         </div>
         <div>
             <label>Comments</label>
-            <textarea value={this.state.comments} 
+            <textarea value={comments} 
                 onChange={this.handleCommentsChange}>
 
             </textarea>
         </div>
         <div>
             <label>Topic</label>
-            <select value={this.state.topic} 
+            <select value={topic} 
                 onChange={this.handleTopicChange}>
                     <option value="react">React</option>
                     <option value="angular">Angular</option>
