@@ -16,7 +16,7 @@ import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form'
-import LifecyleA from './components/LifecyleA';
+import LifecyleA from './components/LifecycleA';
 
 function App() {
   return (

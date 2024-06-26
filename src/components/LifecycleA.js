@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LifecyleB from './LifcecycleB'
+import LifecyleB from './LifecycleB'
 
 class LifecyleA extends Component {
     constructor(props) {
@@ -18,6 +18,19 @@ class LifecyleA extends Component {
 
     componentDidMount(){
         console.log('LifecycleA componentDidMount')
+    }
+
+    shouldComponentUpdate(){
+      console.log('LifecycleA shouldComponentUpdate')
+      return true
+    }
+
+    getSnapshotBeforeUpdate(){
+      console.log('LifecycleA getSnapshotBeforeUpdate')
+    }
+
+    componentDidUpdate(){
+      console.log('LifecycleA componentDidUpdate')
     }
     
   render() {

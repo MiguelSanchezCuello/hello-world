@@ -18,6 +18,19 @@ class LifecyleB extends Component {
     componentDidMount(){
         console.log('LifecycleB componentDidMount')
     }
+
+    shouldComponentUpdate(){
+      console.log('LifecycleB shouldComponentUpdate')
+      return true
+    }
+
+    getSnapshotBeforeUpdate(){
+      console.log('LifecycleB getSnapshotBeforeUpdate')
+    }
+
+    componentDidUpdate(){
+      console.log('LifecycleB componentDidUpdate')
+    }
     
   render() {
     console.log('LifecyleB render')
