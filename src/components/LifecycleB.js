@@ -26,6 +26,7 @@ class LifecyleB extends Component {
 
     getSnapshotBeforeUpdate(){
       console.log('LifecycleB getSnapshotBeforeUpdate')
+      return null
     }
 
     componentDidUpdate(){
