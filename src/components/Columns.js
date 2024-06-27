@@ -1,11 +1,12 @@
 import React from 'react'
 
 function Columns() {
+    // React Fragments can accept the key attribute.
   return (
-    <React.Fragment>
+    <>
       <td>Name</td>
       <td>Miguel</td>
-    </React.Fragment>
+    </>
   )
 }
 
