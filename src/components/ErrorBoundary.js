@@ -1,3 +1,5 @@
+// If we comment the Error boundary element which is wrapping the heroes in the App.js component then nothing
+// will be displayed  (something went wrong text) and the error was not properly handled
 import React, { Component } from 'react'
 
 class ErrorBoundary extends Component {
