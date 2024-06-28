@@ -7,7 +7,7 @@ function MemoComp({name}) {
       {name}
     </div>
   )
-console.log(object)
+
 }
 
-{name}{name}export default MemoComp
+export default React.memo(MemoComp)
