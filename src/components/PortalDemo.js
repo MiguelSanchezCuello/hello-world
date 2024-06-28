@@ -11,3 +11,7 @@ function PortalDemo() {
 }
 
 export default PortalDemo
+
+// Copied the two examples from the video 31
+// https://codesandbox.io/s/00254q4n6p
+// https://codepen.io/gaearon/pen/jGBWpE
