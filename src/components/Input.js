@@ -6,6 +6,10 @@ class Input extends Component {
       this.inputRef = React.createRef()
       
     }
+
+    focusInput(){
+        this.inputRef.current.focus()
+    }
     
   render() {
     return (
