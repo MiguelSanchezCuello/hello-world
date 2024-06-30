@@ -7,3 +7,4 @@ const UserProvier = UserContext.Provider
 const UserConsumer = UserContext.Consumer
 
 export {UserProvier, UserConsumer }
+export default UserContext
