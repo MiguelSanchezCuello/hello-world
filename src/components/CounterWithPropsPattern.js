@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class CounterWithPropsPatter extends Component {
+class CounterWithPropsPattern extends Component {
     constructor(props) {
         super(props)
       
@@ -14,14 +14,15 @@ class CounterWithPropsPatter extends Component {
             return {count: prevState.count + 1}
         })
       }
-      
+
+
   render() {
     return (
       <div>
-        
+        {this.props.render(this.state.count, this.incrementCount)}
       </div>
     )
   }
 }
 
-export default CounterWithPropsPatter
+export default CounterWithPropsPattern
