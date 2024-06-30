@@ -35,10 +35,7 @@ function App() {
   return (
     <div className="App">
       <ClickCounter name="Miguel" />
-      <HoverCounter />
-
-
-
+      {/* <HoverCounter /> */}
       {/* <ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
       <ErrorBoundary> <Hero heroName="Superman" /> </ErrorBoundary>
       <ErrorBoundary> <Hero heroName="Joker" /> </ErrorBoundary> */}
