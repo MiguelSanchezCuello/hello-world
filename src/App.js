@@ -32,12 +32,16 @@ import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User'
 
 function App() {
   return (
     <div className="App">
       <ClickCounterTwo />
       <HoverCounterTwo />
+      <User render={ (isLoggedIn) => isLoggedIn ? 'Miguel'  : 'Guest' } />
+
+
       {/* <ClickCounter name="Miguel" /> */}
       {/* <HoverCounter /> */}
       {/* <ErrorBoundary> <Hero heroName="Batman" /> </ErrorBoundary>
