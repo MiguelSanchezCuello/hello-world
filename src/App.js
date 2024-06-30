@@ -35,11 +35,15 @@ import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User'
 import CounterWithPropsPattern from './components/CounterWithPropsPattern';
 import ComponentC from './components/ComponentC'
+import { UserProvier } from './components/userContext';
 
 function App() {
   return (
     <div className="App">
-      <ComponentC />
+      <UserProvier value='Miguel'>
+        <ComponentC />
+      </UserProvier>
+      
 
 
 
