@@ -38,10 +38,20 @@ import CounterWithPropsPattern from './components/CounterWithPropsPattern';
 function App() {
   return (
     <div className="App">
+      
+
+
+
+
+
+
+
+
+      
       {/* <ClickCounterTwo />
       <HoverCounterTwo />
       <User render={ (isLoggedIn) => isLoggedIn ? 'Miguel'  : 'Guest' } /> */}
-      <CounterWithPropsPattern 
+      {/* <CounterWithPropsPattern 
         render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
@@ -51,7 +61,7 @@ function App() {
         render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      />
+      /> */}
 
 
       {/* <ClickCounter name="Miguel" /> */}
