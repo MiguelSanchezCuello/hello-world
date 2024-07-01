@@ -43,8 +43,6 @@ function App() {
       <UserProvier value='Miguel'>
         <ComponentC />
       </UserProvier>
-      
-
 
 
 
